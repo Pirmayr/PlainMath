@@ -1,0 +1,203 @@
+@font-face {
+    font-family: StandardFont;
+    src: url('DejaVuSansCondensed.eof');
+    src: url('DejaVuSansCondensed.eot?') format('embedded-opentype'), url('DejaVuSansCondensed.woff') format('woff'), url('DejaVuSansCondensed.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+}
+
+div {
+    height: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    margin: 0;
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 0;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-family: StandardFont, sans-serif;
+    font-size: medium;
+    -webkit-user-select: none;
+}
+
+colgroup {
+    width: 10%;
+}
+
+tr {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+#divPage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#divLeft {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow-y: auto;
+}
+
+#divRight {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.tbExpressions {
+    height: auto;
+}
+
+.tbExpression {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: thin solid black;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.tdHeader {
+    height: 10%;
+}
+
+.tdEntry {
+    height: 50px !important;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.tdDelete {
+    height: 20%;
+}
+
+.tdAdd {
+    height: 20%;
+}
+
+.tdEdit {
+    height: 20%;
+}
+
+@media screen {
+    td {
+        margin: 0;
+        border: thin solid black;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        background-color: lightyellow;
+        cursor: default;
+    }
+
+    .tdHeader {
+        height: 10%;
+    }
+
+    .tdInput {
+        height: 10%;
+        word-wrap: break-word;
+    }
+
+    .tdKeyboardKey {
+        height: 10%;
+        width: 10%;
+    }
+
+    .tdKeyboardKeyLast {
+        height: auto;
+        width: 10%;
+    }
+
+    .tdOutput {
+        height: 20%;
+    }
+
+    .divContainer {
+        height: 100%;
+        position: relative;
+        background-color: lightgreen;
+    }
+
+    .divOutput {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        background-color: lightgreen;
+    }
+}
+
+@media print {
+    td {
+        margin: 0;
+        border: none;
+        padding: 0;
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        background-color: transparent;
+        cursor: default;
+    }
+
+    .tdHeader {
+        height: 10%;
+        visibility: hidden;
+    }
+
+    .tdInput {
+        height: 10%;
+        word-wrap: break-word;
+        visibility: hidden;
+    }
+
+    .tdKeyboardKey {
+        height: 10%;
+        width: 10%;
+        visibility: hidden;
+    }
+
+    .tdKeyboardKeyLast {
+        height: 10%;
+        width: 10%;
+        visibility: hidden;
+    }
+
+    .tdOutput {
+        height: 20%;
+        visibility: visible;
+    }
+
+    .divContainer {
+        height: 100%;
+        position: static;
+        background-color: transparent;
+    }
+
+    .divOutput {
+        height: auto;
+        width: 100%;
+        position: static;
+        background-color: transparent;
+    }
+}
+

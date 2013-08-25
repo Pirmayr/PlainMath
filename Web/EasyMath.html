@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="EasyMath.css"/>
+    <script>
+        /*global MathJax, navigator*/
+        function initMathJax() {
+            "use strict";
+            if (0 <= navigator.userAgent.toLowerCase().indexOf("android")) {
+                MathJax.Hub.Config({messageStyle: "none", extensions: ["tex2jax.js"], jax: ["input/TeX", "output/HTML-CSS"]});
+            } else {
+                MathJax.Hub.Config({messageStyle: "none", extensions: ["tex2jax.js"], jax: ["input/TeX", "output/SVG"]});
+            }
+        }
+    </script>
+    <script type="text/x-mathjax-config">
+        initMathJax();
+    </script>
+    <script type="text/javascript" charset="utf-8" src="mathjax/MathJax.js"></script>
+    <script type="text/javascript" charset="utf-8" src="touchscroll.js"></script>
+    <script type="text/javascript" charset="utf-8" src="globals.js"></script>
+    <script type="text/javascript" charset="utf-8" src="helpers.js"></script>
+    <script type="text/javascript" charset="utf-8" src="scanner.js"></script>
+    <script type="text/javascript" charset="utf-8" src="parser.js"></script>
+    <script type="text/javascript" charset="utf-8" src="compiler.js"></script>
+    <script type="text/javascript" charset="utf-8" src="textinput.js"></script>
+    <script type="text/javascript" charset="utf-8" src="uihandler.js"></script>
+    <script type="text/javascript" charset="utf-8" src="EasyMath.js"></script>
+    <script>
+        /*global easyMath, helpers*/
+        /*jshint globalstrict: true*/
+        /*jslint browser: true*/
+        window.onload = helpers.closure(easyMath, easyMath.initialize, null);
+    </script>
+    <style></style>
+</head>
+<body>
+<div id='divPage'>
+    <div id='divLeft'>
+        <div id="expressionsContent"></div>
+    </div>
+    <div id='divRight'>
+        <div id="expressionContent"></div>
+    </div>
+</div>
+</body>
+</html>
