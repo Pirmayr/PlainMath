@@ -26,6 +26,8 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.TEMPLATE_EXPRESSION_KEYBOARD_KEY = "<td class='tdKeyboardKey'>[TEXT]<\/td>";
     this.TEMPLATE_EXPRESSION_KEYBOARD_KEY_LAST = "<td class='tdKeyboardKeyLast'>[TEXT]<\/td>";
     this.TEMPLATE_PRINT_OUTPUT = "<html><header><script type='text/javascript' charset='utf-8' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script></header><body>[EXPRESSION]</body></html>";
+    
+    this.originalInnerHTML = "";
 
     /**
      * The current entry-element in the list of expressions.
@@ -157,6 +159,13 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         touchScroll("idInput");
         touchScroll("idOutputContainer");
     };
+    
+    this.printEnd = function() {
+        document.getElementById("divRight").style.visibility = "visible";
+        document.getElementById("divLeft").style.visibility = "hidden";
+        document.getElementById("divPrint").style.visibility = "hidden";
+        this.convert();
+    }
 
     this.expressionAdd = function (currentEntryElement) {
         currentEntryElement.parentNode.outerHTML += currentEntryElement.parentNode.outerHTML;
@@ -287,18 +296,37 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         this.convert();
     };
 
+    this.printStart = function () {
+        document.getElementById("divRight").style.visibility = "hidden";
+        document.getElementById("divLeft").style.visibility = "hidden";
+        document.getElementById("divPrint").style.visibility = "visible";
+        
+        window.location = "call://print";
+    };
+    
     /**
      * Prints the current output.
      */
     this.printOutput = function () {
-        if (helpers.isAndroidAccessorOk()) {
-            //noinspection JSUnresolvedFunction
-            accessor.printHTML(this.TEMPLATE_PRINT_OUTPUT.replace("[EXPRESSION]", document.getElementById(this.idOutput1).innerHTML));
-        } else {
-            window.print();
-        }
-    };
+        var input, compiler, output;
 
+        input = this.textInputExpression.getText();
+        compiler = new Compiler();
+        output = (input === "") ? "" : compiler.convert(input, this.templateDescriptions);
+        document.getElementById("divPrint").innerHTML = "$$" + output + "$$";
+        
+        MathJax.Hub.Queue(["Typeset", MathJax.Hub], document.getElementById("divPrint"));
+        MathJax.Hub.Queue(helpers.closure(this, this.printStart, null));
+        /*
+         if (helpers.isAndroidAccessorOk()) {
+         //noinspection JSUnresolvedFunction
+         accessor.printHTML(this.TEMPLATE_PRINT_OUTPUT.replace("[EXPRESSION]", document.getElementById(this.idOutput1).innerHTML));
+         } else {
+         window.print();
+         }
+         */
+    };
+    
     /**
      * Refreshes the output with the result of the most recent compilation of the input.
      */

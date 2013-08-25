@@ -44,25 +44,21 @@
             NSString* secondComponent = (NSString *)[components objectAtIndex: 1];
             if ([secondComponent isEqualToString: @"//print"])
             {
-                /*
-                 UIPrintInteractionController *pic = [UIPrintInteractionController sharedPrintController];
-                 UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-                 printInfo.outputType = UIPrintInfoOutputGeneral;
-                 pic.printFormatter = [webView2 viewPrintFormatter];
-                 pic.showsPageRange = YES;
-                 
-                 void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
-                 ^(UIPrintInteractionController *printController, BOOL completed, NSError *error)
-                 {
-                 if (!completed && error)
-                 {
-                 NSLog(@"Printing could not complete because of error: %@", error);
-                 }
-                 };
-                 [pic presentAnimated:YES completionHandler:completionHandler];
-                 */
-                
-                [webView2 stringByEvaluatingJavaScriptFromString: @"sayHello()"];
+                UIPrintInteractionController *pic = [UIPrintInteractionController sharedPrintController];
+                UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+                printInfo.outputType = UIPrintInfoOutputGeneral;
+                pic.printFormatter = [webView2 viewPrintFormatter];
+                pic.showsPageRange = YES;
+                void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
+                ^(UIPrintInteractionController *printController, BOOL completed, NSError *error)
+                {
+                    [webView2 stringByEvaluatingJavaScriptFromString: @"printEnd()"];
+                    if (!completed && error)
+                    {
+                        NSLog(@"Printing could not complete because of error: %@", error);
+                    }
+                };
+                [pic presentAnimated:YES completionHandler:completionHandler];
             }
             return NO;
         }

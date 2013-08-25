@@ -65,5 +65,9 @@ var easyMath = {
         "use strict";
         this.uiHandler = new UIHandler("idInput", "output1", "output2", helpers.STORAGE_KEY_EXPRESSIONS, helpers.STORAGE_KEY_EXPRESSION, this.keyboardLayout, this.templateDescriptions);
         this.uiHandler.initialize();
+    },
+    
+    printEnd: function() {
+        this.uiHandler.printEnd();
     }
 };

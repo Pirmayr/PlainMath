@@ -61,6 +61,13 @@ tr {
     visibility: hidden;
 }
 
+#divPrint {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
 .tbExpressions {
     height: auto;
 }
@@ -143,7 +150,7 @@ tr {
         height: auto;
         width: 100%;
         position: absolute;
-        background-color: gray;
+        background-color: lightgreen;
     }
 }
 
