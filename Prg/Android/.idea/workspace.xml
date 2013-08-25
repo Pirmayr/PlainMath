@@ -30,7 +30,7 @@
     <ignored path="PlainMath.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377173428630" ignored="false" />
-    <file path="/MainActivity.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1375902116522" ignored="false" />
+    <file path="/MainActivity.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377430989474" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1375800913200" ignored="false" />
     <file path="/EasyMath.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377011179836" ignored="false" />
     <file path="/a.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377171566706" ignored="false" />
@@ -46,7 +46,7 @@
     <file path="/scanner.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010567733" ignored="false" />
     <file path="/parser.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010774749" ignored="false" />
     <file path="/uihandler.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377021635466" ignored="false" />
-    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377429718470" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377431970829" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -98,7 +99,6 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -108,10 +108,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EasyMath.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="31" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.6700143">
+            <state line="13" column="137" selection-start="312" selection-end="312" vertical-scroll-proportion="0.29295775">
               <folding />
             </state>
           </provider>
@@ -141,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/PrintDialogActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/print_dialog.xml" />
         <option value="$PROJECT_DIR$/assets/test.js" />
@@ -157,6 +156,7 @@
         <option value="$PROJECT_DIR$/assets/EasyMath.html" />
         <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
         <option value="$PROJECT_DIR$/assets/EasyMath.css" />
+        <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/PrintDialogActivity.java" />
       </list>
     </option>
   </component>
@@ -301,7 +301,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,14 +309,6 @@
               <option name="myItemId" value="PlainMath" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Android 2.2 Platform &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -338,17 +330,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PlainMath" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="218" />
     <property name="project.structure.proportion" value="0.15" />
@@ -362,7 +358,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="222" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="ExportedModule" value="PlainMath" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="218" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="897" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="893" />
@@ -393,61 +389,12 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="PublishConfig">
-    <servers>
-      <server id="fe549805-3eab-4b05-994f-38e50bcad163">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
   <component name="RunManager" selected="Android Application.PlainMath">
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
       <JSRemoteDebuggerConfigurationSettings>
         <option name="engineId" value="chrome" />
         <option name="fileUrl" value="" />
       </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -568,13 +515,13 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27038044" sideWeight="0.4603678" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3174387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.3980978" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920736" sideWeight="0.6019022" order="11" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2228261" sideWeight="0.48125" order="11" side_tool="true" content_ui="tabs" x="7" y="410" width="1600" height="215" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24857324" sideWeight="0.3980978" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24857324" sideWeight="0.6019022" order="11" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22146739" sideWeight="0.48125" order="11" side_tool="true" content_ui="tabs" x="7" y="410" width="1600" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.30517712" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28474113" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22307692" sideWeight="0.51875" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36141303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3611457" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.7918314" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.73277074" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -664,11 +611,28 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
+    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
@@ -705,23 +669,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="315" selection-end="315" vertical-scroll-proportion="0.11299435" />
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/EasyMath.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/PrintDialogActivity.java">
+    <entry file="file://$PROJECT_DIR$/PlainMath.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="13" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.6309859" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="118" selection-start="594" selection-end="594" vertical-scroll-proportion="0.2280285" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="31" selection-start="2266" selection-end="2266" vertical-scroll-proportion="0.6700143">
+        <state line="134" column="59" selection-start="2031" selection-end="2031" vertical-scroll-proportion="0.6212339" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/PrintDialogActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="31" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.92676055">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="137" selection-start="312" selection-end="312" vertical-scroll-proportion="0.29295775">
           <folding />
         </state>
       </provider>
