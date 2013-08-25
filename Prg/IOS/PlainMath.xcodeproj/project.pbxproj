@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06427FFA17CA52DA00E3BC5D /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 06427FF917CA52DA00E3BC5D /* Web */; };
+		06C759F417CA4CC300ED2BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F317CA4CC300ED2BE0 /* UIKit.framework */; };
+		06C759F617CA4CC300ED2BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F517CA4CC300ED2BE0 /* Foundation.framework */; };
+		06C759F817CA4CC300ED2BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F717CA4CC300ED2BE0 /* CoreGraphics.framework */; };
+		06C759FE17CA4CC400ED2BE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06C759FC17CA4CC400ED2BE0 /* InfoPlist.strings */; };
+		06C75A0017CA4CC400ED2BE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C759FF17CA4CC400ED2BE0 /* main.m */; };
+		06C75A0417CA4CC400ED2BE0 /* PlainMathAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C75A0317CA4CC400ED2BE0 /* PlainMathAppDelegate.m */; };
+		06C75A0617CA4CC400ED2BE0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C75A0517CA4CC400ED2BE0 /* Default.png */; };
+		06C75A0817CA4CC400ED2BE0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C75A0717CA4CC400ED2BE0 /* Default@2x.png */; };
+		06C75A0A17CA4CC400ED2BE0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C75A0917CA4CC400ED2BE0 /* Default-568h@2x.png */; };
+		06C75A0D17CA4CC400ED2BE0 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C75A0B17CA4CC400ED2BE0 /* MainStoryboard_iPhone.storyboard */; };
+		06C75A1017CA4CC400ED2BE0 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C75A0E17CA4CC400ED2BE0 /* MainStoryboard_iPad.storyboard */; };
+		06C75A1317CA4CC400ED2BE0 /* PlainMathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C75A1217CA4CC400ED2BE0 /* PlainMathViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06427FF917CA52DA00E3BC5D /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Web; path = ../../../Web; sourceTree = "<group>"; };
+		06C759F017CA4CC300ED2BE0 /* PlainMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C759F317CA4CC300ED2BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06C759F517CA4CC300ED2BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06C759F717CA4CC300ED2BE0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06C759FB17CA4CC400ED2BE0 /* PlainMath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlainMath-Info.plist"; sourceTree = "<group>"; };
+		06C759FD17CA4CC400ED2BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06C759FF17CA4CC400ED2BE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06C75A0117CA4CC400ED2BE0 /* PlainMath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlainMath-Prefix.pch"; sourceTree = "<group>"; };
+		06C75A0217CA4CC400ED2BE0 /* PlainMathAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlainMathAppDelegate.h; sourceTree = "<group>"; };
+		06C75A0317CA4CC400ED2BE0 /* PlainMathAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlainMathAppDelegate.m; sourceTree = "<group>"; };
+		06C75A0517CA4CC400ED2BE0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		06C75A0717CA4CC400ED2BE0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		06C75A0917CA4CC400ED2BE0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		06C75A0C17CA4CC400ED2BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		06C75A0F17CA4CC400ED2BE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		06C75A1117CA4CC400ED2BE0 /* PlainMathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlainMathViewController.h; sourceTree = "<group>"; };
+		06C75A1217CA4CC400ED2BE0 /* PlainMathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlainMathViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C759ED17CA4CC300ED2BE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C759F417CA4CC300ED2BE0 /* UIKit.framework in Frameworks */,
+				06C759F617CA4CC300ED2BE0 /* Foundation.framework in Frameworks */,
+				06C759F817CA4CC300ED2BE0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C759E717CA4CC300ED2BE0 = {
+			isa = PBXGroup;
+			children = (
+				06C759F917CA4CC300ED2BE0 /* PlainMath */,
+				06C759F217CA4CC300ED2BE0 /* Frameworks */,
+				06C759F117CA4CC300ED2BE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06C759F117CA4CC300ED2BE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C759F017CA4CC300ED2BE0 /* PlainMath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06C759F217CA4CC300ED2BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C759F317CA4CC300ED2BE0 /* UIKit.framework */,
+				06C759F517CA4CC300ED2BE0 /* Foundation.framework */,
+				06C759F717CA4CC300ED2BE0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C759F917CA4CC300ED2BE0 /* PlainMath */ = {
+			isa = PBXGroup;
+			children = (
+				06427FF917CA52DA00E3BC5D /* Web */,
+				06C75A0217CA4CC400ED2BE0 /* PlainMathAppDelegate.h */,
+				06C75A0317CA4CC400ED2BE0 /* PlainMathAppDelegate.m */,
+				06C75A0B17CA4CC400ED2BE0 /* MainStoryboard_iPhone.storyboard */,
+				06C75A0E17CA4CC400ED2BE0 /* MainStoryboard_iPad.storyboard */,
+				06C75A1117CA4CC400ED2BE0 /* PlainMathViewController.h */,
+				06C75A1217CA4CC400ED2BE0 /* PlainMathViewController.m */,
+				06C759FA17CA4CC400ED2BE0 /* Supporting Files */,
+			);
+			path = PlainMath;
+			sourceTree = "<group>";
+		};
+		06C759FA17CA4CC400ED2BE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06C759FB17CA4CC400ED2BE0 /* PlainMath-Info.plist */,
+				06C759FC17CA4CC400ED2BE0 /* InfoPlist.strings */,
+				06C759FF17CA4CC400ED2BE0 /* main.m */,
+				06C75A0117CA4CC400ED2BE0 /* PlainMath-Prefix.pch */,
+				06C75A0517CA4CC400ED2BE0 /* Default.png */,
+				06C75A0717CA4CC400ED2BE0 /* Default@2x.png */,
+				06C75A0917CA4CC400ED2BE0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C759EF17CA4CC300ED2BE0 /* PlainMath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C75A1617CA4CC400ED2BE0 /* Build configuration list for PBXNativeTarget "PlainMath" */;
+			buildPhases = (
+				06C759EC17CA4CC300ED2BE0 /* Sources */,
+				06C759ED17CA4CC300ED2BE0 /* Frameworks */,
+				06C759EE17CA4CC300ED2BE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlainMath;
+			productName = PlainMath;
+			productReference = 06C759F017CA4CC300ED2BE0 /* PlainMath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C759E817CA4CC300ED2BE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PlainMath;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Pirmayr;
+			};
+			buildConfigurationList = 06C759EB17CA4CC300ED2BE0 /* Build configuration list for PBXProject "PlainMath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06C759E717CA4CC300ED2BE0;
+			productRefGroup = 06C759F117CA4CC300ED2BE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C759EF17CA4CC300ED2BE0 /* PlainMath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06C759EE17CA4CC300ED2BE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C759FE17CA4CC400ED2BE0 /* InfoPlist.strings in Resources */,
+				06C75A0617CA4CC400ED2BE0 /* Default.png in Resources */,
+				06C75A0817CA4CC400ED2BE0 /* Default@2x.png in Resources */,
+				06C75A0A17CA4CC400ED2BE0 /* Default-568h@2x.png in Resources */,
+				06C75A0D17CA4CC400ED2BE0 /* MainStoryboard_iPhone.storyboard in Resources */,
+				06C75A1017CA4CC400ED2BE0 /* MainStoryboard_iPad.storyboard in Resources */,
+				06427FFA17CA52DA00E3BC5D /* Web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C759EC17CA4CC300ED2BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C75A0017CA4CC400ED2BE0 /* main.m in Sources */,
+				06C75A0417CA4CC400ED2BE0 /* PlainMathAppDelegate.m in Sources */,
+				06C75A1317CA4CC400ED2BE0 /* PlainMathViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06C759FC17CA4CC400ED2BE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C759FD17CA4CC400ED2BE0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06C75A0B17CA4CC400ED2BE0 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C75A0C17CA4CC400ED2BE0 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		06C75A0E17CA4CC400ED2BE0 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C75A0F17CA4CC400ED2BE0 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06C75A1417CA4CC400ED2BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06C75A1517CA4CC400ED2BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06C75A1717CA4CC400ED2BE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlainMath/PlainMath-Prefix.pch";
+				INFOPLIST_FILE = "PlainMath/PlainMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06C75A1817CA4CC400ED2BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlainMath/PlainMath-Prefix.pch";
+				INFOPLIST_FILE = "PlainMath/PlainMath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C759EB17CA4CC300ED2BE0 /* Build configuration list for PBXProject "PlainMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C75A1417CA4CC400ED2BE0 /* Debug */,
+				06C75A1517CA4CC400ED2BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C75A1617CA4CC400ED2BE0 /* Build configuration list for PBXNativeTarget "PlainMath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C75A1717CA4CC400ED2BE0 /* Debug */,
+				06C75A1817CA4CC400ED2BE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06C759E817CA4CC300ED2BE0 /* Project object */;
+}
