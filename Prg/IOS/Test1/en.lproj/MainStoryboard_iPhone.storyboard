@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Test1 View Controller - PlainMath-->
+        <scene sceneID="5">
+            <objects>
+                <viewController title="PlainMath" id="2" customClass="Test1ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bee-DJ-kUW">
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="iX9-0X-iFi"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bee-DJ-kUW" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="SPh-Zr-wWq"/>
+                            <constraint firstItem="Bee-DJ-kUW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="UwY-5R-L1s"/>
+                            <constraint firstItem="Bee-DJ-kUW" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="kNk-yA-j7R"/>
+                            <constraint firstItem="Bee-DJ-kUW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="wEk-q9-qni"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Bee-DJ-kUW" id="I9J-hR-zaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="63"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
