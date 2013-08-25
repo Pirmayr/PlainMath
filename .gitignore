@@ -219,4 +219,4 @@ pip-log.txt
 *.apk
 *.ipa
 Prg/Android/assets/*
-*.xuserstate
+*.xcuserstate
