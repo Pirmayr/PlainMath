@@ -165,7 +165,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         document.getElementById("divLeft").style.visibility = "hidden";
         document.getElementById("divPrint").style.visibility = "hidden";
         this.convert();
-    }
+    };
 
     this.expressionAdd = function (currentEntryElement) {
         currentEntryElement.parentNode.outerHTML += currentEntryElement.parentNode.outerHTML;
@@ -300,7 +300,6 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         document.getElementById("divRight").style.visibility = "hidden";
         document.getElementById("divLeft").style.visibility = "hidden";
         document.getElementById("divPrint").style.visibility = "visible";
-        
         window.location = "call://print";
     };
     
