@@ -67,6 +67,10 @@ var easyMath = {
         this.uiHandler.initialize();
     },
     
+    printBegin: function() {
+        this.uiHandler.printBegin();
+    },
+    
     printEnd: function() {
         this.uiHandler.printEnd();
     }

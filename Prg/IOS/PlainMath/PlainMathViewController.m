@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Pirmayr. All rights reserved.
 //
 
+#pragma mark -
+#pragma mark UIPrintInteractionControllerDelegate
+
 #import "PlainMathViewController.h"
 
 @interface PlainMathViewController ()
@@ -23,7 +26,6 @@
     
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Web/EasyMath.html" ofType:nil]];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    
     [_webView loadRequest:requestObj];
     
 }
@@ -49,6 +51,8 @@
                 printInfo.outputType = UIPrintInfoOutputGeneral;
                 pic.printFormatter = [webView2 viewPrintFormatter];
                 pic.showsPageRange = YES;
+                pic.delegate = self;
+                
                 void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
                 ^(UIPrintInteractionController *printController, BOOL completed, NSError *error)
                 {
@@ -64,6 +68,41 @@
         }
     }
     return YES; // Return YES to make sure regular navigation works as expected.
+}
+
+-(UIViewController*) printInteractionControllerParentViewController:(UIPrintInteractionController*)printInteractionController
+{
+	return nil;
+}
+
+-(UIPrintPaper*) printInteractionController:(UIPrintInteractionController*)printInteractionController choosePaper:(NSArray*)paperList
+{
+	return nil;
+}
+
+-(void) printInteractionControllerWillPresentPrinterOptions:(UIPrintInteractionController*)printInteractionController
+{
+}
+
+-(void) printInteractionControllerDidPresentPrinterOptions:(UIPrintInteractionController*)printInteractionController
+{
+}
+
+-(void) printInteractionControllerWillDismissPrinterOptions:(UIPrintInteractionController*)printInteractionController
+{
+}
+
+-(void) printInteractionControllerDidDismissPrinterOptions:(UIPrintInteractionController*)printInteractionController
+{
+}
+
+-(void) printInteractionControllerWillStartJob:(UIPrintInteractionController*)printInteractionController
+{
+    [_webView stringByEvaluatingJavaScriptFromString: @"printBegin()"];
+}
+
+-(void) printInteractionControllerDidFinishJob:(UIPrintInteractionController*)printInteractionController
+{
 }
 
 @end

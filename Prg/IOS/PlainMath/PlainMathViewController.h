@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlainMathViewController : UIViewController
+@interface PlainMathViewController : UIViewController <UIPrintInteractionControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @end

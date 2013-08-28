@@ -19,7 +19,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.TEMPLATE_EXPRESSIONS_TABLE = "<table class='tbExpressions'><colgroup span='10'></colgroup>[ROWS]<\/table>";
     this.TEMPLATE_EXPRESSIONS_ENTRY_ROW = "<tr><td class='tdEntry' colspan='7' data-entryExpression='[EXPRESSION]' data-entryTitle='[TITLE]'>[ENTRY]<\/td><td class='tdAdd' colspan='1'>+<\/td><td class='tdDelete' colspan='1'>-<\/td><td class='tdEdit' colspan='1'>&#x270e;<\/td><\/tr>";
     this.TEMPLATE_EXPRESSION_TABLE = "<table class='tbExpression'><colgroup span='10'></colgroup>[ROWS]<\/table>";
-    this.TEMPLATE_EXPRESSION_HEADER_ROW = "<tr><td id='idLeft' class='tdHeader' colspan='2'><img src='arrow_left_30.png'/></td><td id='idMiddle' class='tdHeader' colspan='6'><\/td><td id='idPrint' class='tdHeader' colspan='2'><img src='printer_30.png'/><\/td><\/tr>";
+    this.TEMPLATE_EXPRESSION_HEADER_ROW = "<tr><td id='idLeft' class='tdHeader' colspan='2'><img src='arrow_left_30.png'/></td><td id='idMiddle' class='tdHeader' colspan='4'><\/td><td id='idHelp' class='tdHeader' colspan='2'><img src='printer_30.png'/><\/td><td id='idPrint' class='tdHeader' colspan='2'><img src='printer_30.png'/><\/td><\/tr>";
     this.TEMPLATE_EXPRESSION_INPUT_ROW = "<tr><td id='idInput' class='tdInput' colspan='10'><\/td><\/tr>";
     this.TEMPLATE_EXPRESSION_OUTPUT_ROW = "<tr><td class='tdOutput' colspan='10'><div id='idOutputContainer' class='divContainer'><div id='output1' class='divOutput'><\/div><div id='output2' class='divOutput'><\/div><\/div><\/td><\/tr>";
     this.TEMPLATE_EXPRESSION_KEYBOARD_ROW = "<tr>[KEYS]<\/tr>";
@@ -27,7 +27,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.TEMPLATE_EXPRESSION_KEYBOARD_KEY_LAST = "<td class='tdKeyboardKeyLast'>[TEXT]<\/td>";
     this.TEMPLATE_PRINT_OUTPUT = "<html><header><script type='text/javascript' charset='utf-8' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script></header><body>[EXPRESSION]</body></html>";
     
-    this.originalInnerHTML = "";
+    this.savedOriginalElement = null;
 
     /**
      * The current entry-element in the list of expressions.
@@ -40,15 +40,20 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
      */
     this.hasTouchSupport = document.documentElement.hasOwnProperty("ontouchstart");
     /**
+     * This value is "true", if the user has requested to go to the expressions-page, otherwise "false".
+     * @type {boolean}
+     */
+    this.isGotoExpressionsPageRequested = false;
+    /**
      * This value is "true", if the user has requested to go to the expression-page, otherwise "false".
      * @type {boolean}
      */
     this.isGotoExpressionPageRequested = false;
     /**
-     * This value is "true", if the user has requested to go back to the page with the list of expressions, otherwise "false".
+     * This value is "true", if the user has requested to go to the help-page, otherwise "false".
      * @type {boolean}
      */
-    this.isGotoExpressionsPageRequested = false;
+    this.isGotoHelpPageRequested = false;
     /**
      *     This value is "true", if a key is currently pressed, otherwise "false".
      */
@@ -146,6 +151,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         }
         document.getElementById("expressionContent").innerHTML = this.TEMPLATE_EXPRESSION_TABLE.replace("[ROWS]", rows);
         document.getElementById("idLeft").onclick = helpers.closure(this, this.goToExpressionsPage, null);
+        document.getElementById("idHelp").onclick = helpers.closure(this, this.goToHelpPage, null);
         document.getElementById("idPrint").onclick = helpers.closure(this, this.printOutput, null);
         this.setKeyHandlers(document.getElementsByClassName("tdKeyboardKey"));
         this.setKeyHandlers(document.getElementsByClassName("tdKeyboardKeyLast"));
@@ -159,14 +165,11 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         touchScroll("idInput");
         touchScroll("idOutputContainer");
     };
-    
-    this.printEnd = function() {
-        document.getElementById("divRight").style.visibility = "visible";
-        document.getElementById("divLeft").style.visibility = "hidden";
-        document.getElementById("divPrint").style.visibility = "hidden";
-        this.convert();
-    };
 
+    this.createHelpTable = function() {
+        this.setHelpHandlers();
+    };
+    
     this.expressionAdd = function (currentEntryElement) {
         currentEntryElement.parentNode.outerHTML += currentEntryElement.parentNode.outerHTML;
         this.setExpressionsHandlers();
@@ -218,8 +221,18 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         this.convert();
     };
 
+    this.goToExpressionPageFromHelp = function (element) {
+        this.isGotoExpressionPageRequested = true;
+        this.convert();
+    };
+
     this.goToExpressionsPage = function () {
         this.isGotoExpressionsPageRequested = true;
+        this.startRefreshOutput();
+    };
+
+    this.goToHelpPage = function () {
+        this.isGotoHelpPageRequested = true;
         this.startRefreshOutput();
     };
 
@@ -292,38 +305,49 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.initialize = function () {
         this.createExpressionsTable(this.expressionsLoad());
         this.createExpressionTable();
+        this.createHelpTable();
         document.getElementById(this.idInput).textContent = helpers.getPersistentValue(this.storageKeyExpression);
         this.convert();
     };
 
-    this.printStart = function () {
-        document.getElementById("divRight").style.visibility = "hidden";
-        document.getElementById("divLeft").style.visibility = "hidden";
-        document.getElementById("divPrint").style.visibility = "visible";
-        window.location = "call://print";
+    this.printBegin = function() {
+        document.getElementById("divContent").style.visibility = "visible";
+    };
+    
+    this.printEnd = function() {
+        var contentElement;
+        contentElement = document.getElementById("divContent");
+        contentElement.innerHTML = "";
+        contentElement.appendChild(this.savedOriginalElement);
     };
     
     /**
      * Prints the current output.
      */
     this.printOutput = function () {
-        var input, compiler, output;
+        var input, compiler, output, contentElement;
+         if (helpers.isAndroidAccessorOk()) { // Perform Android-style printing ...
+            this.textInputTitle.setText("hi2");
+            //noinspection JSUnresolvedFunction
+            accessor.printHTML(this.TEMPLATE_PRINT_OUTPUT.replace("[EXPRESSION]", document.getElementById(this.idOutput1).innerHTML));
+        } else { // Perform IOS-style printing ...
+            input = this.textInputExpression.getText();
+            compiler = new Compiler();
+            output = (input === "") ? "" : compiler.convert(input, this.templateDescriptions);
+            contentElement = document.getElementById("divContent");
+            contentElement.style.visibility = "hidden";
+            this.savedOriginalElement = document.getElementById("divPage");
+            contentElement.removeChild(this.savedOriginalElement);
+            contentElement.innerHTML = "$$" + output + "$$";
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub], contentElement);
+            MathJax.Hub.Queue(helpers.closure(this, this.printStart, null));
+            // window.print();
+        }
+    };
 
-        input = this.textInputExpression.getText();
-        compiler = new Compiler();
-        output = (input === "") ? "" : compiler.convert(input, this.templateDescriptions);
-        document.getElementById("divPrint").innerHTML = "$$" + output + "$$";
-        
-        MathJax.Hub.Queue(["Typeset", MathJax.Hub], document.getElementById("divPrint"));
-        MathJax.Hub.Queue(helpers.closure(this, this.printStart, null));
-        /*
-         if (helpers.isAndroidAccessorOk()) {
-         //noinspection JSUnresolvedFunction
-         accessor.printHTML(this.TEMPLATE_PRINT_OUTPUT.replace("[EXPRESSION]", document.getElementById(this.idOutput1).innerHTML));
-         } else {
-         window.print();
-         }
-         */
+    this.printStart = function () {
+        // document.getElementById("divContent").style.visibility = "visible";
+        window.location = "call://print";
     };
     
     /**
@@ -344,6 +368,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         if (this.isGotoExpressionPageRequested) {
             document.getElementById("divRight").style.visibility = "visible";
             document.getElementById("divLeft").style.visibility = "hidden";
+            document.getElementById("divHelp").style.visibility = "hidden";
             foregroundElement.style.visibility = "hidden";
             backgroundElement.style.visibility = "visible";
             this.textInputTitle.deactivate();
@@ -353,6 +378,13 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
             backgroundElement.style.visibility = "hidden";
             document.getElementById("divLeft").style.visibility = "visible";
             document.getElementById("divRight").style.visibility = "hidden";
+            document.getElementById("divHelp").style.visibility = "hidden";
+        } else if (this.isGotoHelpPageRequested) {
+            foregroundElement.style.visibility = "hidden";
+            backgroundElement.style.visibility = "hidden";
+            document.getElementById("divLeft").style.visibility = "hidden";
+            document.getElementById("divRight").style.visibility = "hidden";
+            document.getElementById("divHelp").style.visibility = "visible";
         } else {
             if (document.getElementById("divRight").style.visibility === "visible") {
                 foregroundElement.style.visibility = "hidden";
@@ -364,6 +396,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         }
         this.isGotoExpressionPageRequested = false;
         this.isGotoExpressionsPageRequested = false;
+        this.isGotoHelpPageRequested = false;
         foregroundElement.innerHTML = backgroundElement.innerHTML;
         if (0 <= newLeftValue) {
             containerElement.setAttribute("style", "overflow-x: hidden");
@@ -384,6 +417,15 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         helpers.setHandlerByClassName("tdAdd", "onclick", helpers.closure(this, this.expressionAdd, null));
         helpers.setHandlerByClassName("tdDelete", "onclick", helpers.closure(this, this.expressionDelete, null));
         helpers.setHandlerByClassName("tdEdit", "onclick", helpers.closure(this, this.goToExpressionPage, null));
+    };
+
+    /**
+     * Sets the handlers for adding, deleting, and editing expressions.
+     */
+    this.setHelpHandlers = function () {
+        var leaveHelpElement;
+        leaveHelpElement = document.getElementById("idLeaveHelp");
+        leaveHelpElement.onclick = helpers.closure(this, this.goToExpressionPageFromHelp, null);
     };
 
     this.setKeyHandlers = function (keyElements) {

@@ -30,6 +30,11 @@
     <script type="text/javascript" charset="utf-8" src="uihandler.js"></script>
     <script type="text/javascript" charset="utf-8" src="EasyMath.js"></script>
     <script>
+        function printBegin()
+        {
+            easyMath.printBegin();
+        }
+        
         function printEnd()
         {
             easyMath.printEnd();
@@ -43,6 +48,7 @@
     <style></style>
 </head>
 <body>
+    <div id='divContent'>
 <div id='divPage'>
     <div id='divLeft'>
         <div id="expressionsContent"></div>
@@ -50,8 +56,12 @@
     <div id='divRight'>
         <div id="expressionContent"></div>
     </div>
-    <div id='divPrint'>
+    <div id='divHelp'>
+        <table class='tbHelp'><colgroup span='10'></colgroup>
+            <tr><td id='idLeaveHelp' class='tdHeader' colspan='2'><img src='arrow_left_30.png'/></td><td class='tdHeader' colspan='6'></td><td id='idPrintHelp' class='tdHeader' colspan='2'><img src='printer_30.png'/></td></tr>
+        </table>
     </div>
 </div>
+        </div>
 </body>
 </html>
