@@ -23,15 +23,15 @@ var easyMath = {
     ],
 
     templateDescriptions: [
-        {name: helpers.NAME_BRACKETED_EXPRESSION, opType: helpers.SYM_BEGIN_BLOCK, template: "{#l0#0#r0}"},
-        {name: "\\", opType: helpers.SYM_PREFIX_OPERATOR, template: "\\#0"},
-        {name: "{", opType: helpers.SYM_BEGIN_BLOCK, template: "{"},
-        {name: "}", opType: helpers.SYM_END_BLOCK, template: "}"},
-        {name: "(", opType: helpers.SYM_BEGIN_BLOCK, template: "\\left({"},
-        {name: ")", opType: helpers.SYM_END_BLOCK, template: "}\\right)"},
-        {name: "[", opType: helpers.SYM_BEGIN_BLOCK, template: "\\left[{"},
-        {name: "]", opType: helpers.SYM_END_BLOCK, template: "}\\right]"},
-        {name: ",", opType: helpers.SYM_SEPARATOR, template: ""},
+        {name: helpers.NAME_BRACKETED_EXPRESSION, opType: helpers.SYM_BEGIN_BLOCK, template: "{#l0#0#r0}", inDocumentation: false},
+        {name: "\\", opType: helpers.SYM_PREFIX_OPERATOR, template: "\\#0", inDocumentation: false},
+        {name: "{", opType: helpers.SYM_BEGIN_BLOCK, template: "{", inDocumentation: false},
+        {name: "}", opType: helpers.SYM_END_BLOCK, template: "}", inDocumentation: false},
+        {name: "(", opType: helpers.SYM_BEGIN_BLOCK, template: "\\left({", inDocumentation: false},
+        {name: ")", opType: helpers.SYM_END_BLOCK, template: "}\\right)", inDocumentation: false},
+        {name: "[", opType: helpers.SYM_BEGIN_BLOCK, template: "\\left[{", inDocumentation: false},
+        {name: "]", opType: helpers.SYM_END_BLOCK, template: "}\\right]", inDocumentation: false},
+        {name: ",", opType: helpers.SYM_SEPARATOR, template: "", inDocumentation: false},
         {name: "=", opType: helpers.SYM_INFIX_OPERATOR, priority: 0, template: "{#l0#0#r0}={#l1#1#r1}"},
         {name: "+-", opType: helpers.SYM_PREFIX_OPERATOR, template: "\\pm{#0}"},
         {name: "+", opType: helpers.SYM_INFIX_OPERATOR, priority: 1, template: "{#l0#0#r0}+{#l1#1#r1}"},
@@ -66,12 +66,14 @@ var easyMath = {
         this.uiHandler = new UIHandler("idInput", "output1", "output2", helpers.STORAGE_KEY_EXPRESSIONS, helpers.STORAGE_KEY_EXPRESSION, this.keyboardLayout, this.templateDescriptions);
         this.uiHandler.initialize();
     },
-    
-    printBegin: function() {
+
+    printBegin: function () {
+        "use strict";
         this.uiHandler.printBegin();
     },
-    
-    printEnd: function() {
+
+    printEnd: function () {
+        "use strict";
         this.uiHandler.printEnd();
     }
 };

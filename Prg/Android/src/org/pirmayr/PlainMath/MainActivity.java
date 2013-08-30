@@ -1,4 +1,4 @@
-// Version 20
+// Version 22
 
 package org.pirmayr.PlainMath;
 

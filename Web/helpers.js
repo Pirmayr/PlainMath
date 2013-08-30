@@ -28,7 +28,17 @@ var helpers = {
             callback.call(object, this, param);
         };
     },
-
+    
+    elementHide: function(element) {
+        element.style.visibility = "hidden";
+        element.style.display = "none";
+    },
+    
+    elementShow: function(element) {
+        element.style.display = "block";
+        element.style.visibility = "visible";
+    },
+    
     getField: function (object, fieldName, defaultValue) {
         "use strict";
         var result = object.getAttribute("data-" + fieldName);
