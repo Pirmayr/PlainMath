@@ -25,6 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1275ff-cc6f-4705-8bdd-e84791e8756d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" afterPath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/en.lproj/MainStoryboard_iPad.storyboard" afterPath="$PROJECT_DIR$/../IOS/PlainMath/en.lproj/MainStoryboard_iPad.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" afterPath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/PlainMathViewController.m" afterPath="$PROJECT_DIR$/../IOS/PlainMath/PlainMathViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/uihandler.js" afterPath="$PROJECT_DIR$/../../Web/uihandler.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PlainMath.iws" />
@@ -43,7 +48,8 @@
     <file path="/scanner.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010567733" ignored="false" />
     <file path="/parser.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010774749" ignored="false" />
     <file path="/uihandler.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377903508120" ignored="false" />
-    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377969318562" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377980561532" ignored="false" />
+    <file path="/a.dummy" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377980953583" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +65,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -95,7 +102,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -108,7 +114,7 @@
       <file leaf-file-name="uihandler.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="48" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.5365385">
+            <state line="22" column="55" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.44946235">
               <folding />
             </state>
           </provider>
@@ -126,7 +132,7 @@
       <file leaf-file-name="EasyMath.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="70" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0">
+            <state line="132" column="4" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -196,15 +202,15 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/assets/EasyMath.html" />
         <option value="$PROJECT_DIR$/assets/EasyMath.js" />
-        <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
         <option value="$PROJECT_DIR$/assets/EasyMath.css" />
+        <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
         <option value="$PROJECT_DIR$/assets/uihandler.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1436" />
+    <option name="width" value="1440" />
     <option name="height" value="820" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -623,14 +629,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1436" height="820" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="820" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27" sideWeight="0.4603678" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31659693" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27089137" sideWeight="0.7737931" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40551725" sideWeight="0.54930556" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2701389" sideWeight="0.7737931" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28025478" sideWeight="0.64245015" order="11" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2262069" sideWeight="0.4906475" order="12" side_tool="false" content_ui="tabs" x="7" y="410" width="1600" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.30517712" order="1" side_tool="true" content_ui="tabs" />
@@ -650,7 +657,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.73641306" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29707113" sideWeight="0.54930556" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30215827" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -807,14 +813,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="70" selection-start="2563" selection-end="2563" vertical-scroll-proportion="0.0">
+        <state line="132" column="4" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="48" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.5365385">
+        <state line="22" column="55" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.44946235">
           <folding />
         </state>
       </provider>

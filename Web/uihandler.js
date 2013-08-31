@@ -388,7 +388,15 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     };
 
     this.printBegin = function () {
-        document.getElementById("divContent").style.visibility = "visible";
+        var input, compiler, output, contentElement;
+        input = this.textInputExpression.getText();
+        compiler = new Compiler();
+        output = (input === "") ? "" : compiler.convert(input, this.templateDescriptions);
+        contentElement = document.getElementById("divContent");
+        this.savedOriginalElement = document.getElementById("divPage");
+        contentElement.removeChild(this.savedOriginalElement);
+        contentElement.innerHTML = "$$" + output + "$$";
+        MathJax.Hub.Typeset();
     };
 
     this.printEnd = function () {
@@ -402,27 +410,13 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
      * Prints the current output.
      */
     this.printOutput = function () {
-        var input, compiler, output, contentElement;
         if (helpers.isAndroidAccessorOk()) { // Perform Android-style printing ...
             this.textInputTitle.setText("hi2");
             //noinspection JSUnresolvedFunction
             accessor.printHTML(this.TEMPLATE_PRINT_OUTPUT.replace("[EXPRESSION]", document.getElementById(this.idOutput1).innerHTML));
         } else { // Perform IOS-style printing ...
-            input = this.textInputExpression.getText();
-            compiler = new Compiler();
-            output = (input === "") ? "" : compiler.convert(input, this.templateDescriptions);
-            contentElement = document.getElementById("divContent");
-            contentElement.style.visibility = "hidden";
-            this.savedOriginalElement = document.getElementById("divPage");
-            contentElement.removeChild(this.savedOriginalElement);
-            contentElement.innerHTML = "$$" + output + "$$";
-            MathJax.Hub.Queue(["Typeset", MathJax.Hub], contentElement);
-            MathJax.Hub.Queue(helpers.closure(this, this.printStart, null));
+            window.location = "call://print";
         }
-    };
-
-    this.printStart = function () {
-        window.location = "call://print";
     };
 
     /**

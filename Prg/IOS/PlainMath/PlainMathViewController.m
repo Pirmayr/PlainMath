@@ -20,14 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
-    
     [[_webView scrollView] setBounces: NO];
-    
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Web/EasyMath.html" ofType:nil]];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:requestObj];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,11 +50,9 @@
                 pic.printFormatter = [webView2 viewPrintFormatter];
                 pic.showsPageRange = YES;
                 pic.delegate = self;
-                
                 void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) =
                 ^(UIPrintInteractionController *printController, BOOL completed, NSError *error)
                 {
-                    [webView2 stringByEvaluatingJavaScriptFromString: @"printEnd()"];
                     if (!completed && error)
                     {
                         NSLog(@"Printing could not complete because of error: %@", error);
@@ -103,6 +99,7 @@
 
 -(void) printInteractionControllerDidFinishJob:(UIPrintInteractionController*)printInteractionController
 {
+    [_webView stringByEvaluatingJavaScriptFromString: @"printEnd()"];
 }
 
 @end
