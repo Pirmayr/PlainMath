@@ -4,7 +4,7 @@
 
 var TIMEOUT_CONVERT = 500;
 var TIMEOUT_HANDLE_INPUT = 200;
-var TIMEOUT_REFRESH_OUTPUT = 100;
+var TIMEOUT_REFRESH_OUTPUT = 125;
 var MAX_PARAMETERS = 100;
 
 function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storageKeyExpression, keyboardLayout, templateDescriptions) {

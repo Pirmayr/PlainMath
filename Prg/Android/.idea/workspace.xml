@@ -25,24 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1275ff-cc6f-4705-8bdd-e84791e8756d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/Default-568h@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/Default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/Default@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/Icon114.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/Icon57.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/Default.png" afterPath="$PROJECT_DIR$/../IOS/PlainMath/Default.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/xcuserdata/pic.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" afterPath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/xcuserdata/pic.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.css" afterPath="$PROJECT_DIR$/../../Web/EasyMath.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.html" afterPath="$PROJECT_DIR$/../../Web/EasyMath.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.js" afterPath="$PROJECT_DIR$/../../Web/EasyMath.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" afterPath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" afterPath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PlainMath.iml" afterPath="$PROJECT_DIR$/PlainMath.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/helpers.js" afterPath="$PROJECT_DIR$/../../Web/helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/uihandler.js" afterPath="$PROJECT_DIR$/../../Web/uihandler.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PlainMath.iws" />
@@ -61,7 +43,7 @@
     <file path="/scanner.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010567733" ignored="false" />
     <file path="/parser.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010774749" ignored="false" />
     <file path="/uihandler.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377903508120" ignored="false" />
-    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377902425180" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377969318562" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +58,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -114,6 +95,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -126,7 +108,7 @@
       <file leaf-file-name="uihandler.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="287" column="23" selection-start="14441" selection-end="14441" vertical-scroll-proportion="0.65">
+            <state line="22" column="48" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.5365385">
               <folding />
             </state>
           </provider>
@@ -644,7 +626,6 @@
     <frame x="0" y="22" width="1436" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30215827" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27" sideWeight="0.4603678" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -654,7 +635,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2262069" sideWeight="0.4906475" order="12" side_tool="false" content_ui="tabs" x="7" y="410" width="1600" height="215" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.30517712" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.49568346" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30620688" sideWeight="0.50359714" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3048276" sideWeight="0.50359714" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3611457" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.7918314" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.73277074" order="8" side_tool="false" content_ui="tabs" />
@@ -670,6 +651,7 @@
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.73641306" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29707113" sideWeight="0.54930556" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30215827" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -832,7 +814,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="23" selection-start="14441" selection-end="14441" vertical-scroll-proportion="0.65">
+        <state line="22" column="48" selection-start="1296" selection-end="1296" vertical-scroll-proportion="0.5365385">
           <folding />
         </state>
       </provider>
