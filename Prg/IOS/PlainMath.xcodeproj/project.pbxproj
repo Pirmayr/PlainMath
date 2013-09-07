@@ -13,6 +13,10 @@
 		063B7C8517CF7ECB0087CEE0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063B7C8417CF7ECB0087CEE0 /* Default@2x.png */; };
 		063B7C8717CF7ED40087CEE0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 063B7C8617CF7ED40087CEE0 /* Default-568h@2x.png */; };
 		06427FFA17CA52DA00E3BC5D /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 06427FF917CA52DA00E3BC5D /* Web */; };
+		065B70B617D3A92D0059294A /* PlainMathIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 065B70B517D3A92D0059294A /* PlainMathIcon57.png */; };
+		065B70B817D3A9910059294A /* PlainMathIcon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 065B70B717D3A9910059294A /* PlainMathIcon114.png */; };
+		065B70BA17D3B9940059294A /* PlainMathIcon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 065B70B917D3B9940059294A /* PlainMathIcon72.png */; };
+		065B70BC17D3B9990059294A /* PlainMathIcon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 065B70BB17D3B9990059294A /* PlainMathIcon144.png */; };
 		06C759F417CA4CC300ED2BE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F317CA4CC300ED2BE0 /* UIKit.framework */; };
 		06C759F617CA4CC300ED2BE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F517CA4CC300ED2BE0 /* Foundation.framework */; };
 		06C759F817CA4CC300ED2BE0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C759F717CA4CC300ED2BE0 /* CoreGraphics.framework */; };
@@ -31,6 +35,10 @@
 		063B7C8417CF7ECB0087CEE0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		063B7C8617CF7ED40087CEE0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		06427FF917CA52DA00E3BC5D /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Web; path = ../../../Web; sourceTree = "<group>"; };
+		065B70B517D3A92D0059294A /* PlainMathIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainMathIcon57.png; sourceTree = "<group>"; };
+		065B70B717D3A9910059294A /* PlainMathIcon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainMathIcon114.png; sourceTree = "<group>"; };
+		065B70B917D3B9940059294A /* PlainMathIcon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainMathIcon72.png; sourceTree = "<group>"; };
+		065B70BB17D3B9990059294A /* PlainMathIcon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlainMathIcon144.png; sourceTree = "<group>"; };
 		06C759F017CA4CC300ED2BE0 /* PlainMath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlainMath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C759F317CA4CC300ED2BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06C759F517CA4CC300ED2BE0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +75,10 @@
 		06C759E717CA4CC300ED2BE0 = {
 			isa = PBXGroup;
 			children = (
+				065B70BB17D3B9990059294A /* PlainMathIcon144.png */,
+				065B70B917D3B9940059294A /* PlainMathIcon72.png */,
+				065B70B717D3A9910059294A /* PlainMathIcon114.png */,
+				065B70B517D3A92D0059294A /* PlainMathIcon57.png */,
 				063B7C8617CF7ED40087CEE0 /* Default-568h@2x.png */,
 				063B7C8417CF7ECB0087CEE0 /* Default@2x.png */,
 				063B7C8217CF7EC10087CEE0 /* Default.png */,
@@ -186,6 +198,10 @@
 				063B7C8317CF7EC10087CEE0 /* Default.png in Resources */,
 				063B7C8517CF7ECB0087CEE0 /* Default@2x.png in Resources */,
 				063B7C8717CF7ED40087CEE0 /* Default-568h@2x.png in Resources */,
+				065B70B617D3A92D0059294A /* PlainMathIcon57.png in Resources */,
+				065B70B817D3A9910059294A /* PlainMathIcon114.png in Resources */,
+				065B70BA17D3B9940059294A /* PlainMathIcon72.png in Resources */,
+				065B70BC17D3B9990059294A /* PlainMathIcon144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +312,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlainMath/PlainMath-Prefix.pch";
 				INFOPLIST_FILE = "PlainMath/PlainMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -307,6 +324,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PlainMath/PlainMath-Prefix.pch";
 				INFOPLIST_FILE = "PlainMath/PlainMath-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

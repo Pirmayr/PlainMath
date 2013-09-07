@@ -15,8 +15,10 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>Icon.png</string>
-				<string>Icon57.png</string>
-				<string>Icon114.png</string>
+				<string>PlainMathIcon57.png</string>
+				<string>PlainMathIcon114.png</string>
+				<string>PlainMathIcon72.png</string>
+				<string>PlainMathIcon144.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -44,13 +46,23 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UIStatusBarHidden~ipad</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

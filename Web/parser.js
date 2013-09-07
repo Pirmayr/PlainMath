@@ -61,26 +61,35 @@ function Parser(input, templateDescriptions) {
         return result;
     };
 
-    this.parseOuterPart = function () {
-        var result, currentResult, currentName;
-        result = [];
-        if (this.scanner.currentSymbol === helpers.SYM_PREFIX_OPERATOR) {
-            currentName = this.scanner.currentSymbolString;
-            this.scanner.readNextSymbol();
-        }
-        currentResult = this.parseInnerPart();
-        if (!this.isResultValid(currentResult)) {
-            return null;
-        }
-        result = result.concat(currentResult);
-        if (helpers.hasContent(currentName)) {
-            result = this.scanner.expand(currentName, result);
-        }
-        if (this.scanner.currentSymbol === helpers.SYM_POSTFIX_OPERATOR) {
-            result = this.scanner.expand(this.scanner.currentSymbolString, result);
-            this.scanner.readNextSymbol();
-        }
 
+    this.parseOuterPart = function () {
+        var result, isFirstOuterPart, currentResult, currentName;
+        result = [];
+        isFirstOuterPart = true;
+        currentName = "";
+        while ((this.scanner.currentSymbol === helpers.SYM_PREFIX_OPERATOR) || (this.scanner.currentSymbol === helpers.SYM_LITERAL) || (this.scanner.currentSymbol === helpers.SYM_BEGIN_BLOCK)) {
+            if (this.scanner.currentSymbol === helpers.SYM_PREFIX_OPERATOR) {
+                currentName = this.scanner.currentSymbolString;
+                this.scanner.readNextSymbol();
+            }
+            currentResult = this.parseInnerPart();
+            if (!this.isResultValid(currentResult)) {
+                return null;
+            }
+            if (helpers.hasContent(currentName)) {
+                currentResult = this.scanner.expand(currentName, currentResult);
+            }
+            if (this.scanner.currentSymbol === helpers.SYM_POSTFIX_OPERATOR) {
+                currentResult = this.scanner.expand(this.scanner.currentSymbolString, currentResult);
+                this.scanner.readNextSymbol();
+            }
+            result = result.concat(currentResult);
+            if (!isFirstOuterPart) {
+                result = this.scanner.expand("*", result);
+            }
+            isFirstOuterPart = false;
+            currentName = "";
+        }
         return result;
     };
 

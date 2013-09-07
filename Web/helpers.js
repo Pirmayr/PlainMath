@@ -28,17 +28,19 @@ var helpers = {
             callback.call(object, this, param);
         };
     },
-    
-    elementHide: function(element) {
+
+    elementHide: function (element) {
+        "use strict";
         element.style.visibility = "hidden";
         element.style.display = "none";
     },
-    
-    elementShow: function(element) {
+
+    elementShow: function (element) {
+        "use strict";
         element.style.display = "block";
         element.style.visibility = "visible";
     },
-    
+
     getField: function (object, fieldName, defaultValue) {
         "use strict";
         var result = object.getAttribute("data-" + fieldName);
@@ -79,6 +81,11 @@ var helpers = {
         script.src = filename;
         script.type = 'text/javascript';
         head.appendChild(script);
+    },
+
+    isAlpha: function (text) {
+        "use strict";
+        return text.match(/^[a-zA-Z]+$/);
     },
 
     /**

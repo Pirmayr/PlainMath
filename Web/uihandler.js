@@ -27,7 +27,6 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.TEMPLATE_EXPRESSION_KEYBOARD_KEY = "<td class='tdKeyboardKey'>[TEXT]<\/td>";
     this.TEMPLATE_EXPRESSION_KEYBOARD_KEY_LAST = "<td class='tdKeyboardKeyLast'>[TEXT]<\/td>";
     this.TEMPLATE_HELP_TABLE = "<table class='tbHelp'><colgroup span='10'></colgroup>[ROWS]<\/table>";
-    this.TEMPLATE_HELP_HEADER_ROW = "<tr><td id='idLeaveHelp' class='tdHeader' colspan='2'><img src='arrow_left_30.png'\/></td><td id='idMiddle' class='tdHeader' colspan='8'><\/td><\/tr>";
     this.TEMPLATE_HELP_ENTRY_ROW = "<tr><td class='tdHelpExample' colspan='5'>[HELP_EXAMPLE]<\/td><td class='tdHelpOutput' colspan='5'>[HELP_OUTPUT]<\/td><\/tr>";
     this.TEMPLATE_PRINT_OUTPUT = "<html><header><script type='text/javascript' charset='utf-8' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script></header><body>[EXPRESSION]</body></html>";
     this.savedOriginalElement = null;
@@ -87,7 +86,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
      */
     this.timerRefreshOutput = null;
 
-    this.convert = function () {
+    this.convert = function (forceRefresh) {
         var input, compiler, output, outputElement1, outputElement2, backgroundElement;
         this.timerConvert = null;
         input = this.textInputExpression.getText();
@@ -102,6 +101,9 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
             backgroundElement.textContent = "$$" + output + "$$";
             MathJax.Hub.Queue(["Typeset", MathJax.Hub], backgroundElement);
             MathJax.Hub.Queue(helpers.closure(this, this.startRefreshOutput, null));
+        } else if (helpers.hasContent(forceRefresh) && (typeof forceRefresh === "boolean") && forceRefresh) {
+            this.startRefreshOutput();
+            alert(forceRefresh);
         }
     };
 
@@ -128,7 +130,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
             currentEntryRow = currentEntryRow.replace("[TITLE]", currentEntryTitle);
             rows += currentEntryRow;
         }
-        document.getElementById("expressionsContent").innerHTML = this.TEMPLATE_EXPRESSIONS_TABLE.replace("[ROWS]", rows);
+        document.getElementById("idDivExpressionsContent").innerHTML = this.TEMPLATE_EXPRESSIONS_TABLE.replace("[ROWS]", rows);
         this.setExpressionsHandlers();
     };
 
@@ -151,7 +153,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
             }
             rows += this.TEMPLATE_EXPRESSION_KEYBOARD_ROW.replace("[KEYS]", currentCharacters);
         }
-        document.getElementById("expressionContent").innerHTML = this.TEMPLATE_EXPRESSION_TABLE.replace("[ROWS]", rows);
+        document.getElementById("idDivExpressionContent").innerHTML = this.TEMPLATE_EXPRESSION_TABLE.replace("[ROWS]", rows);
         document.getElementById("idLeft").onclick = helpers.closure(this, this.goToExpressionsPage, null);
         document.getElementById("idHelp").onclick = helpers.closure(this, this.goToHelpPage, null);
         document.getElementById("idPrint").onclick = helpers.closure(this, this.printOutput, null);
@@ -171,7 +173,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.createHelpTable = function () {
         var rows, i, currentDescription, currentInDocumentation, currentOutput, currentHelpEntryRow;
         rows = "";
-        rows += this.TEMPLATE_HELP_HEADER_ROW;
+        // rows += this.TEMPLATE_HELP_HEADER_ROW;
         for (i = 0; i < this.templateDescriptions.length; i += 1) {
             currentDescription = this.templateDescriptions[i];
             currentInDocumentation = currentDescription.inDocumentation;
@@ -183,7 +185,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
                 rows += currentHelpEntryRow;
             }
         }
-        document.getElementById("idHelpContent").innerHTML = this.TEMPLATE_HELP_TABLE.replace("[ROWS]", rows);
+        document.getElementById("idDivHelpContent").innerHTML = this.TEMPLATE_HELP_TABLE.replace("[ROWS]", rows);
         this.setHelpHandlers();
     };
 
@@ -264,7 +266,10 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         case helpers.SYM_POSTFIX_OPERATOR:
             return "a" + templateDescription.name;
         case helpers.SYM_INFIX_OPERATOR:
-            return "a " + templateDescription.name + " b";
+            if (helpers.isAlpha(templateDescription.name)) {
+                return "a " + templateDescription.name + " b";
+            }
+            return "a" + templateDescription.name + "b";
         }
         return "";
     };
@@ -278,7 +283,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         this.textInputTitle.setText(currentEntryTitle);
         this.isGotoExpressionPageRequested = true;
         document.getElementById("divRight").style.display = "block";
-        this.convert();
+        this.convert(true);
     };
 
     //noinspection JSUnusedLocalSymbols
@@ -435,15 +440,9 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         newTopValueString = "top: [VALUE]px".replace("[VALUE]", newTopValue.toString());
         backgroundElement.setAttribute("style", newTopValueString);
         if (this.isGotoExpressionPageRequested) {
-            /*
-             document.getElementById("divRight").style.visibility = "visible";
-             document.getElementById("divLeft").style.visibility = "hidden";
-             document.getElementById("divHelp").style.visibility = "hidden";
-             */
             helpers.elementShow(document.getElementById("divRight"));
             helpers.elementHide(document.getElementById("divLeft"));
             helpers.elementHide(document.getElementById("divHelp"));
-
             foregroundElement.style.visibility = "hidden";
             backgroundElement.style.visibility = "visible";
             this.textInputTitle.deactivate();
@@ -451,30 +450,15 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
         } else if (this.isGotoExpressionsPageRequested) {
             foregroundElement.style.visibility = "hidden";
             backgroundElement.style.visibility = "hidden";
-            /*
-             document.getElementById("divRight").style.visibility = "hidden";
-             document.getElementById("divLeft").style.visibility = "visible";
-             document.getElementById("divHelp").style.visibility = "hidden";
-             */
-
             helpers.elementHide(document.getElementById("divRight"));
             helpers.elementShow(document.getElementById("divLeft"));
             helpers.elementHide(document.getElementById("divHelp"));
-
         } else if (this.isGotoHelpPageRequested) {
             foregroundElement.style.visibility = "hidden";
             backgroundElement.style.visibility = "hidden";
-
-            /*
-             document.getElementById("divRight").style.visibility = "hidden";
-             document.getElementById("divLeft").style.visibility = "hidden";
-             document.getElementById("divHelp").style.visibility = "visible";
-             */
-
             helpers.elementHide(document.getElementById("divRight"));
             helpers.elementHide(document.getElementById("divLeft"));
             helpers.elementShow(document.getElementById("divHelp"));
-
         } else {
             if (document.getElementById("divRight").style.visibility === "visible") {
                 foregroundElement.style.visibility = "hidden";

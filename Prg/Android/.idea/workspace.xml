@@ -25,10 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1275ff-cc6f-4705-8bdd-e84791e8756d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" afterPath="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/en.lproj/MainStoryboard_iPad.storyboard" afterPath="$PROJECT_DIR$/../IOS/PlainMath/en.lproj/MainStoryboard_iPad.storyboard" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/PlainMathIcon114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/PlainMathIcon144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../IOS/PlainMathIcon57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.css" afterPath="$PROJECT_DIR$/../../Web/EasyMath.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.html" afterPath="$PROJECT_DIR$/../../Web/EasyMath.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/EasyMath.js" afterPath="$PROJECT_DIR$/../../Web/EasyMath.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" afterPath="$PROJECT_DIR$/../IOS/PlainMath/PlainMath-Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath/PlainMathViewController.m" afterPath="$PROJECT_DIR$/../IOS/PlainMath/PlainMathViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/helpers.js" afterPath="$PROJECT_DIR$/../../Web/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/parser.js" afterPath="$PROJECT_DIR$/../../Web/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../IOS/PlainMath.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Web/uihandler.js" afterPath="$PROJECT_DIR$/../../Web/uihandler.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,18 +43,18 @@
     <file path="/fragment.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377901376069" ignored="false" />
     <file path="/MainActivity.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377430989474" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1375800913200" ignored="false" />
-    <file path="/EasyMath.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377714607669" ignored="false" />
+    <file path="/EasyMath.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378134372358" ignored="false" />
     <file path="/a.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377709645007" ignored="false" />
-    <file path="/EasyMath.css" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377901709464" ignored="false" />
-    <file path="/EasyMath.html" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377711251919" ignored="false" />
+    <file path="/EasyMath.css" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378404938589" ignored="false" />
+    <file path="/EasyMath.html" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378403567652" ignored="false" />
     <file path="/fragment.js2" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1375639541882" ignored="false" />
     <file path="/a.java" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377018899669" ignored="false" />
     <file path="/test.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377004223416" ignored="false" />
-    <file path="/helpers.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377021551255" ignored="false" />
+    <file path="/helpers.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378391946164" ignored="false" />
     <file path="/scanner.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010567733" ignored="false" />
-    <file path="/parser.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377010774749" ignored="false" />
-    <file path="/uihandler.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377903508120" ignored="false" />
-    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377980561532" ignored="false" />
+    <file path="/parser.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378143834266" ignored="false" />
+    <file path="/uihandler.js" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378392043751" ignored="false" />
+    <file path="/Dummy.txt" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1378543207186" ignored="false" />
     <file path="/a.dummy" changelist="ff1275ff-cc6f-4705-8bdd-e84791e8756d" time="1377980953583" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +70,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -81,8 +86,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -98,10 +103,11 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -114,43 +120,7 @@
       <file leaf-file-name="uihandler.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="55" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.44946235">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EasyMath.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/EasyMath.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="4" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EasyMath.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="132" column="4" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EasyMath.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/EasyMath.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="129" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+            <state line="23" column="82" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.38235295">
               <folding />
             </state>
           </provider>
@@ -159,7 +129,34 @@
       <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="57" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
+            <state line="85" column="4" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasyMath.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/EasyMath.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="45" selection-start="2906" selection-end="2906" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasyMath.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="20" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasyMath.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/EasyMath.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="94" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,17 +191,17 @@
         <option value="$PROJECT_DIR$/assets/jquery.js" />
         <option value="$PROJECT_DIR$/assets/globals.js" />
         <option value="$PROJECT_DIR$/assets/scanner.js" />
-        <option value="$PROJECT_DIR$/assets/parser.js" />
         <option value="$PROJECT_DIR$/assets/compiler.js" />
         <option value="$PROJECT_DIR$/assets/textinput.js" />
-        <option value="$PROJECT_DIR$/assets/helpers.js" />
         <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/PrintDialogActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/assets/EasyMath.html" />
-        <option value="$PROJECT_DIR$/assets/EasyMath.js" />
-        <option value="$PROJECT_DIR$/assets/EasyMath.css" />
         <option value="$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java" />
+        <option value="$PROJECT_DIR$/assets/EasyMath.js" />
+        <option value="$PROJECT_DIR$/assets/parser.js" />
+        <option value="$PROJECT_DIR$/assets/helpers.js" />
         <option value="$PROJECT_DIR$/assets/uihandler.js" />
+        <option value="$PROJECT_DIR$/assets/EasyMath.html" />
+        <option value="$PROJECT_DIR$/assets/EasyMath.css" />
       </list>
     </option>
   </component>
@@ -338,7 +335,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -349,58 +346,17 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlainMath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlainMath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlainMath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PlainMath" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="218" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="218" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="199" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="199" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="222" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="203" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="ExportedApkPath" value="C:\Usr\Drp\Dropbox\Public\Prg\PlainMath\PlainMath.apk" />
     <property name="MemberChooser.sorted" value="false" />
@@ -408,12 +364,12 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="ExportedModule" value="PlainMath" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="218" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="897" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="893" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="217" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="199" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="816" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="813" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="198" />
     <property name="JavaScriptPreferStrict" value="true" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="211" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="193" />
     <property name="DEBUGGABLE_DEVICE" value="emulator-5556 (Fast233)" />
     <property name="DEBUGGABLE_PROCESS" value="org.pirmayr.PlainMath" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -429,7 +385,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="Errors" />
     <property name="JavaScriptLanguageLevel" value="ES5" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -629,21 +585,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="820" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27" sideWeight="0.4603678" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31659693" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40551725" sideWeight="0.54930556" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2701389" sideWeight="0.7737931" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28025478" sideWeight="0.64245015" order="11" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2262069" sideWeight="0.4906475" order="12" side_tool="false" content_ui="tabs" x="7" y="410" width="1600" height="215" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.30517712" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26666668" sideWeight="0.76" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26666668" sideWeight="0.64" order="11" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24" sideWeight="0.4906475" order="12" side_tool="false" content_ui="tabs" x="7" y="410" width="1600" height="215" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24861111" sideWeight="0.30517712" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.49568346" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3048276" sideWeight="0.50359714" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3611457" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329375" sideWeight="0.7918314" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967825" sideWeight="0.73277074" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -657,6 +612,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.73641306" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40551725" sideWeight="0.54930556" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30215827" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -725,7 +681,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="50" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="62" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -733,16 +692,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -773,54 +722,62 @@
         <state line="129" column="31" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.92676055" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scanner.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="9" selection-start="623" selection-end="623" vertical-scroll-proportion="0.022189349" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="38" selection-start="311" selection-end="311" vertical-scroll-proportion="0.15239477" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/EasyMath.html">
+    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scanner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="9" selection-start="623" selection-end="623" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/compiler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="731" selection-end="731" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="2178" selection-end="2178" vertical-scroll-proportion="0.13856813" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/EasyMath.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="129" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+        <state line="61" column="94" selection-start="4400" selection-end="4400" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="57" selection-start="2855" selection-end="2855" vertical-scroll-proportion="0.0">
+        <state line="85" column="4" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/pirmayr/PlainMath/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/assets/EasyMath.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+        <state line="70" column="45" selection-start="2906" selection-end="2906" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/EasyMath.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="132" column="4" selection-start="2005" selection-end="2005" vertical-scroll-proportion="0.0">
+        <state line="153" column="20" selection-start="2299" selection-end="2299" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/uihandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="55" selection-start="1303" selection-end="1303" vertical-scroll-proportion="0.44946235">
+        <state line="23" column="82" selection-start="1673" selection-end="1673" vertical-scroll-proportion="0.38235295">
           <folding />
         </state>
       </provider>

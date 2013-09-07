@@ -58,7 +58,8 @@ var easyMath = {
         {name: "prod", opType: helpers.SYM_PREFIX_OPERATOR, template: "\\prod_{#1}^{#2}{#l0#0#r2}"},
         {name: "cases2", opType: helpers.SYM_PREFIX_OPERATOR, template: "{#0}=\\left\\{\\begin{array}{1}{#1}\\\\{#2}\\end{array}\\right."},
         {name: "overbrace", opType: helpers.SYM_INFIX_OPERATOR, priority: 9, template: "\\overbrace{#0}^{#1}"},
-        {name: "underbrace", opType: helpers.SYM_INFIX_OPERATOR, priority: 10, template: "\\underbrace{#0}_{#1}"}
+        {name: "underbrace", opType: helpers.SYM_INFIX_OPERATOR, priority: 10, template: "\\underbrace{#0}_{#1}"},
+        {name: "...", opType: helpers.SYM_POSTFIX_OPERATOR, priority: 0, template: "{#0}\\dots"}
     ],
 
     initialize: function () {
