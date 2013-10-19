@@ -57,7 +57,7 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
      */
     this.isGotoHelpPageRequested = false;
     /**
-     *     This value is "true", if a key is currently pressed, otherwise "false".
+     * This value is "true", if a key is currently pressed, otherwise "false".
      */
     this.isKeyPressed = false;
     /**
@@ -173,7 +173,6 @@ function UIHandler(idInput, idOutput1, idOutput2, storageKeyExpressions, storage
     this.createHelpTable = function () {
         var rows, i, currentDescription, currentInDocumentation, currentOutput, currentHelpEntryRow;
         rows = "";
-        // rows += this.TEMPLATE_HELP_HEADER_ROW;
         for (i = 0; i < this.templateDescriptions.length; i += 1) {
             currentDescription = this.templateDescriptions[i];
             currentInDocumentation = currentDescription.inDocumentation;
